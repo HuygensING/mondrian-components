@@ -6,6 +6,8 @@
   "scripts": {
     "build": "tsc",
     "bump": "hi-bump",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook-build": "build-storybook -c .storybook -o docs",
     "watch": "tsc -w"
   },
   "author": "",
@@ -15,7 +17,9 @@
     "styled-components": "^1.4.4"
   },
   "devDependencies": {
+    "@kadira/storybook": "^2.35.3",
     "hi-bump": "^1.1.1",
+    "react-dom": "^15.4.2",
     "typescript": "^2.2.2"
   }
 }

@@ -77,6 +77,7 @@ export const C = Tag;
 export const Choice = Tag;
 export const Div = Tag;
 export const Gap = Tag;
+export const Head = Tag;
 export const MdPostmark = Tag;
 export const Note = Tag;
 export const P = Tag;

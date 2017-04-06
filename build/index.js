@@ -59,6 +59,7 @@ exports.C = Tag;
 exports.Choice = Tag;
 exports.Div = Tag;
 exports.Gap = Tag;
+exports.Head = Tag;
 exports.MdPostmark = Tag;
 exports.Note = Tag;
 exports.P = Tag;

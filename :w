@@ -1,9 +1,0 @@
-import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
-import { Add, Del } from '../build';
-
-storiesOf('Del', module)
-	.add('default', () => <Del>This is deleted</Del>);
-
-storiesOf('Add', module)
-	.add('default', () => <Add>This is added</Add>);

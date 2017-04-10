@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "hire-highlighter": "^1.0.0",
     "react": "^15.4.2",
     "styled-components": "^1.4.4"
   },

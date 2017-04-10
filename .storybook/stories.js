@@ -1,7 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import { storiesOf, action } from '@kadira/storybook';
-import { Add, Choice, Corr, Del, Hi, Lb, No, Pb, Sic, Unclear } from '../build';
+import {
+	Add,
+	Choice,
+	Corr,
+	Del,
+	Hi,
+	Lb,
+	No,
+	Pb,
+	Sic,
+	Supplied,
+	Unclear
+} from '../build';
 
 const PbWrapper = styled.div`
 	font-size: 1.5em;
@@ -47,6 +59,9 @@ storiesOf('Pagebreak', module)
 			...
 		</PbWrapper>
 	);
+
+storiesOf('Supplied', module)
+	.add('default', () => <div>AFAIK <Supplied>As Far As I Know</Supplied></div>)
 
 storiesOf('Unclear', module)
 	.add('default', () => <Unclear>Unclear</Unclear>);

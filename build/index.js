@@ -1,20 +1,16 @@
 "use strict";
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
 Object.defineProperty(exports, "__esModule", { value: true });
 const styled_components_1 = require("styled-components");
+const hire_highlight_between_1 = require("hire-highlight-between");
 const Tag = styled_components_1.default.div `
 	display: inline;
 `;
 exports.Lb = styled_components_1.default(Tag) `
 	display: block;
 	font-size: 16px;
-`;
-exports.No = styled_components_1.default.span `
-	color: gray;
-	margin-left: -3em;
-	margin-top: 2px;
-	position: absolute;
-	text-align: right;
-	width: 2em;
 `;
 exports.Pb = styled_components_1.default.div `
 	background: #EEE;
@@ -45,16 +41,21 @@ exports.Hi = styled_components_1.default(Tag) `
 	text-decoration: ${props => props['data-rend'] === 'underline' ? 'underline' : 'none'}
 	vertical-align: ${props => props['data-rend'] === 'super' ? 'super' : 'baseline'}
 `;
+exports.Supplied = styled_components_1.default(Tag) `
+	color: #AAA;
+	&:after { content: ')'; }
+	&:before { content: '('; }
+`;
 exports.Unclear = styled_components_1.default(Tag) `
 	color: #AAA;
 	&:after { content: ']'; }
 	&:before { content: '['; }
 `;
+exports.Body = hire_highlight_between_1.default;
 exports.Ab = Tag;
 exports.AddrLine = Tag;
 exports.Address = Tag;
 exports.Anchor = Tag;
-exports.Body = Tag;
 exports.C = Tag;
 exports.Choice = Tag;
 exports.Div = Tag;
@@ -65,4 +66,4 @@ exports.Note = Tag;
 exports.P = Tag;
 exports.Retrace = Tag;
 exports.Space = Tag;
-exports.Supplied = Tag;
+__export(require("./no"));

@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
+    "@types/react": "^15.0.21",
     "hi-bump": "^1.1.1",
     "react-dom": "^15.4.2",
     "typescript": "^2.2.2"

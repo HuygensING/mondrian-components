@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import HireHighlightBetween from 'hire-highlight-between';
 
 const Tag = styled.div`
 	display: inline;
@@ -9,18 +10,6 @@ const Tag = styled.div`
 export const Lb = styled(Tag)`
 	display: block;
 	font-size: 16px;
-`;
-
-// No is short for "number". No is a child of <Lb>, so it
-// really is: Linenumber, but because it is used so frequently
-// byte size does matter in this case.
-export const No = styled.span`
-	color: gray;
-	margin-left: -3em;
-	margin-top: 2px;
-	position: absolute;
-	text-align: right;
-	width: 2em;
 `;
 
 // Pagebreak
@@ -62,17 +51,24 @@ export const Hi = styled(Tag)`
 	vertical-align: ${props => props['data-rend'] === 'super' ? 'super' : 'baseline'}
 `;
 
+export const Supplied = styled(Tag)`
+	color: #AAA;
+	&:after { content: ')'; }
+	&:before { content: '('; }
+`;
+
 export const Unclear = styled(Tag)`
 	color: #AAA;
 	&:after { content: ']'; }
 	&:before { content: '['; }
 `;
 
+export const Body = HireHighlightBetween;
+
 export const Ab = Tag;
 export const AddrLine = Tag;
 export const Address = Tag;
 export const Anchor = Tag;
-export const Body = Tag;
 export const C = Tag;
 export const Choice = Tag;
 export const Div = Tag;
@@ -83,4 +79,5 @@ export const Note = Tag;
 export const P = Tag;
 export const Retrace = Tag;
 export const Space = Tag;
-export const Supplied = Tag;
+
+export * from './no';

@@ -4,7 +4,7 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 const styled_components_1 = require("styled-components");
-const hire_highlight_between_1 = require("hire-highlight-between");
+const hire_highlighter_1 = require("hire-highlighter");
 const Tag = styled_components_1.default.div `
 	display: inline;
 `;
@@ -51,7 +51,7 @@ exports.Unclear = styled_components_1.default(Tag) `
 	&:after { content: ']'; }
 	&:before { content: '['; }
 `;
-exports.Body = hire_highlight_between_1.default;
+exports.Body = hire_highlighter_1.default;
 exports.Ab = Tag;
 exports.AddrLine = Tag;
 exports.Address = Tag;

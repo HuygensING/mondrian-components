@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import HireHighlightBetween from 'hire-highlight-between';
+import HireHighlighter from 'hire-highlighter';
 
 const Tag = styled.div`
 	display: inline;
@@ -63,7 +63,7 @@ export const Unclear = styled(Tag)`
 	&:before { content: '['; }
 `;
 
-export const Body = HireHighlightBetween;
+export const Body = HireHighlighter;
 
 export const Ab = Tag;
 export const AddrLine = Tag;

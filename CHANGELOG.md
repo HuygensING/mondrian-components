@@ -1,3 +1,7 @@
+### v1.2.0	(2017/4/10 21:11)
+* Add hire-highlighter dep
+* Rename hire-highlighter-between to hire-highlighter
+
 ### v1.1.0	(2017/4/10 20:40)
 * Scroll to active line number
 * Remove file ':w' :)

@@ -1,3 +1,7 @@
+### v1.2.2	(2017/4/20 10:5)
+* Don't run mark.js when query is empty
+* Remove hire-highlighter from package.json
+
 ### v1.2.1	(2017/4/20 9:40)
 * Use mark.js instead of hire-highlighter
 * Move body to own file

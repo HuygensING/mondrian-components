@@ -1,3 +1,6 @@
+### v1.2.3	(2017/4/20 14:6)
+* Add undefined tags
+
 ### v1.2.2	(2017/4/20 10:5)
 * Don't run mark.js when query is empty
 * Remove hire-highlighter from package.json

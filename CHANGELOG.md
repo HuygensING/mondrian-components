@@ -1,3 +1,8 @@
+### v1.2.1	(2017/4/20 9:40)
+* Use mark.js instead of hire-highlighter
+* Move body to own file
+* Bump hire-highlighter
+
 ### v1.2.0	(2017/4/10 21:11)
 * Add hire-highlighter dep
 * Rename hire-highlighter-between to hire-highlighter

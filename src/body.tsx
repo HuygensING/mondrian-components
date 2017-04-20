@@ -5,6 +5,8 @@ export class Body extends React.Component<any, any> {
 	private node;
 
 	public componentDidMount() {
+		if (this.props.query == null) return;
+
 		const instance = new Mark(this.node);
 		instance.mark(this.props.query, {
 			acrossElements: true,

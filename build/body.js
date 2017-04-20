@@ -4,6 +4,8 @@ const React = require("react");
 const Mark = require("mark.js");
 class Body extends React.Component {
     componentDidMount() {
+        if (this.props.query == null)
+            return;
         const instance = new Mark(this.node);
         instance.mark(this.props.query, {
             acrossElements: true,

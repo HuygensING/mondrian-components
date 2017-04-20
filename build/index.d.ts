@@ -54,7 +54,6 @@ export declare const Unclear: React.ComponentClass<React.HTMLProps<HTMLDivElemen
     theme?: any;
     innerRef?: (instance: any) => void;
 }>;
-export declare const Body: any;
 export declare const Ab: React.ComponentClass<React.HTMLProps<HTMLDivElement> & {
     theme?: any;
     innerRef?: (instance: any) => void;
@@ -112,3 +111,4 @@ export declare const Space: React.ComponentClass<React.HTMLProps<HTMLDivElement>
     innerRef?: (instance: any) => void;
 }>;
 export * from './no';
+export * from './body';

@@ -1,6 +1,5 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import HireHighlighter from 'hire-highlighter';
 
 const Tag = styled.div`
 	display: inline;
@@ -63,7 +62,6 @@ export const Unclear = styled(Tag)`
 	&:before { content: '['; }
 `;
 
-export const Body = HireHighlighter;
 
 export const Ab = Tag;
 export const AddrLine = Tag;
@@ -81,3 +79,4 @@ export const Retrace = Tag;
 export const Space = Tag;
 
 export * from './no';
+export * from './body';

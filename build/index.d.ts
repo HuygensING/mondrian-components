@@ -70,6 +70,10 @@ export declare const Anchor: React.ComponentClass<React.HTMLProps<HTMLDivElement
     theme?: any;
     innerRef?: (instance: any) => void;
 }>;
+export declare const Bibl: React.ComponentClass<React.HTMLProps<HTMLDivElement> & {
+    theme?: any;
+    innerRef?: (instance: any) => void;
+}>;
 export declare const C: React.ComponentClass<React.HTMLProps<HTMLDivElement> & {
     theme?: any;
     innerRef?: (instance: any) => void;
@@ -94,6 +98,14 @@ export declare const MdPostmark: React.ComponentClass<React.HTMLProps<HTMLDivEle
     theme?: any;
     innerRef?: (instance: any) => void;
 }>;
+export declare const MdTranspose: React.ComponentClass<React.HTMLProps<HTMLDivElement> & {
+    theme?: any;
+    innerRef?: (instance: any) => void;
+}>;
+export declare const Metamark: React.ComponentClass<React.HTMLProps<HTMLDivElement> & {
+    theme?: any;
+    innerRef?: (instance: any) => void;
+}>;
 export declare const Note: React.ComponentClass<React.HTMLProps<HTMLDivElement> & {
     theme?: any;
     innerRef?: (instance: any) => void;
@@ -102,7 +114,15 @@ export declare const P: React.ComponentClass<React.HTMLProps<HTMLDivElement> & {
     theme?: any;
     innerRef?: (instance: any) => void;
 }>;
+export declare const Ref: React.ComponentClass<React.HTMLProps<HTMLDivElement> & {
+    theme?: any;
+    innerRef?: (instance: any) => void;
+}>;
 export declare const Retrace: React.ComponentClass<React.HTMLProps<HTMLDivElement> & {
+    theme?: any;
+    innerRef?: (instance: any) => void;
+}>;
+export declare const Rs: React.ComponentClass<React.HTMLProps<HTMLDivElement> & {
     theme?: any;
     innerRef?: (instance: any) => void;
 }>;

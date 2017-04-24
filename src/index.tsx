@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
+// Default tag
 const Tag = styled.div`
 	display: inline;
 `;

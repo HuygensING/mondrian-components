@@ -23,6 +23,7 @@ exports.Body = styled_components_1.default(BodyComp) `
 	counter-reset: noteNumbers;
 	font-size: 24px;
 	line-height: 36px;
+	margin: auto;
 	max-width: 480px;
 	position: relative;
 `;

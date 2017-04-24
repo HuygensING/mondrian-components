@@ -66,10 +66,6 @@ export declare const Address: React.ComponentClass<React.HTMLProps<HTMLDivElemen
     theme?: any;
     innerRef?: (instance: any) => void;
 }>;
-export declare const Anchor: React.ComponentClass<React.HTMLProps<HTMLDivElement> & {
-    theme?: any;
-    innerRef?: (instance: any) => void;
-}>;
 export declare const Bibl: React.ComponentClass<React.HTMLProps<HTMLDivElement> & {
     theme?: any;
     innerRef?: (instance: any) => void;
@@ -106,10 +102,6 @@ export declare const Metamark: React.ComponentClass<React.HTMLProps<HTMLDivEleme
     theme?: any;
     innerRef?: (instance: any) => void;
 }>;
-export declare const Note: React.ComponentClass<React.HTMLProps<HTMLDivElement> & {
-    theme?: any;
-    innerRef?: (instance: any) => void;
-}>;
 export declare const P: React.ComponentClass<React.HTMLProps<HTMLDivElement> & {
     theme?: any;
     innerRef?: (instance: any) => void;
@@ -132,3 +124,6 @@ export declare const Space: React.ComponentClass<React.HTMLProps<HTMLDivElement>
 }>;
 export * from './no';
 export * from './body';
+export * from './note';
+export * from './notes';
+export * from './anchor';

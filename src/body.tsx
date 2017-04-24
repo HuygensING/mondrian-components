@@ -1,7 +1,8 @@
 import * as React from 'react';
 import Mark from 'mark.js';
+import styled from "styled-components";
 
-export class Body extends React.Component<any, any> {
+class BodyComp extends React.Component<any, any> {
 	private node;
 
 	public componentDidMount() {
@@ -19,9 +20,18 @@ export class Body extends React.Component<any, any> {
 	public render() {
 		return (
 			<div
+				className={this.props.className}
 			  ref={(node) => { this.node = node; }}
 			>
 				{this.props.children}
 			</div>)
 	}
 }
+
+export const Body = styled(BodyComp)`
+	counter-reset: noteNumbers;
+	font-size: 24px;
+	line-height: 36px;
+	max-width: 480px;
+	position: relative;
+`;

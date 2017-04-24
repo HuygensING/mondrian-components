@@ -15,9 +15,9 @@ exports.Pb = styled_components_1.default.div `
 	background: #EEE;
 	border: 1px solid #CCC;
 	height: 50px;
-	left: calc(-50px + -3em);
 	position: absolute;
-	width: 50px
+	right: -75px;
+	width: 50px;
 `;
 exports.Del = styled_components_1.default.span `
 	color: red;
@@ -53,7 +53,6 @@ exports.Unclear = styled_components_1.default(Tag) `
 exports.Ab = Tag;
 exports.AddrLine = Tag;
 exports.Address = Tag;
-exports.Anchor = Tag;
 exports.Bibl = Tag;
 exports.C = Tag;
 exports.Choice = Tag;
@@ -63,7 +62,6 @@ exports.Head = Tag;
 exports.MdPostmark = Tag;
 exports.MdTranspose = Tag;
 exports.Metamark = Tag;
-exports.Note = Tag;
 exports.P = Tag;
 exports.Ref = Tag;
 exports.Retrace = Tag;
@@ -71,3 +69,6 @@ exports.Rs = Tag;
 exports.Space = Tag;
 __export(require("./no"));
 __export(require("./body"));
+__export(require("./note"));
+__export(require("./notes"));
+__export(require("./anchor"));

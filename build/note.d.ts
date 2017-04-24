@@ -1,3 +1,3 @@
 /// <reference types="react" />
 import * as React from 'react';
-export declare const Body: React.ComponentClass<any>;
+export declare const Note: React.ComponentClass<any>;

@@ -16,9 +16,9 @@ export const Pb = styled.div`
 	background: #EEE;
 	border: 1px solid #CCC;
 	height: 50px;
-	left: calc(-50px + -3em);
 	position: absolute;
-	width: 50px
+	right: -75px;
+	width: 50px;
 `;
 
 export const Del = styled.span`
@@ -62,11 +62,9 @@ export const Unclear = styled(Tag)`
 	&:before { content: '['; }
 `;
 
-
 export const Ab = Tag;
 export const AddrLine = Tag;
 export const Address = Tag;
-export const Anchor = Tag;
 export const Bibl = Tag;
 export const C = Tag;
 export const Choice = Tag;
@@ -76,7 +74,6 @@ export const Head = Tag;
 export const MdPostmark = Tag;
 export const MdTranspose = Tag;
 export const Metamark = Tag;
-export const Note = Tag;
 export const P = Tag;
 export const Ref = Tag;
 export const Retrace = Tag;
@@ -85,3 +82,6 @@ export const Space = Tag;
 
 export * from './no';
 export * from './body';
+export * from './note';
+export * from './notes';
+export * from './anchor';

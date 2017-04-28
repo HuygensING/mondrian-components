@@ -12,7 +12,7 @@ const NotesComp = (props) =>
 		{
 			props.children.map((child, i) =>
 				React.cloneElement(child, {
-					activeNote: props.activeNote,
+					active: props.activeNote != null && props.activeNote === child.props['data-n'],
 					key: i,
 				})
 			)
@@ -21,5 +21,5 @@ const NotesComp = (props) =>
 
 export const Notes = styled(NotesComp)`
 	margin: 0;
-	padding: 0;
+	padding: 0 0 0 2em;
 `;

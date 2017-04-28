@@ -127,3 +127,4 @@ export * from './body';
 export * from './note';
 export * from './notes';
 export * from './anchor';
+export * from './facsthumb';

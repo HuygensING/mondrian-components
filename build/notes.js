@@ -9,10 +9,10 @@ const titleByType = {
 const NotesComp = (props) => React.createElement("ol", { className: props.className },
     React.createElement("h3", null, titleByType[props['data-type']]),
     props.children.map((child, i) => React.cloneElement(child, {
-        activeNote: props.activeNote,
+        active: props.activeNote != null && props.activeNote === child.props['data-n'],
         key: i,
     })));
 exports.Notes = styled_components_1.default(NotesComp) `
 	margin: 0;
-	padding: 0;
+	padding: 0 0 0 2em;
 `;

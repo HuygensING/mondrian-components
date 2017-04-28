@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import {black35, black50} from "./colors";
+import {activeNote, black35, black50} from "./colors";
 
 const AnchorComp = (props) =>
 	<a
@@ -14,6 +14,9 @@ export const Anchor = styled(AnchorComp)`
 	margin: 0 0.5em;
 	
 	&:before {
+		background-color: ${props =>
+			props['data-n'] === props.activeNote ? activeNote : 'none'
+		}
 		border: 1px solid ${black35};
 		border-radius: 1em;
 		padding: .3em .6em;

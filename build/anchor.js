@@ -10,6 +10,7 @@ exports.Anchor = styled_components_1.default(AnchorComp) `
 	margin: 0 0.5em;
 	
 	&:before {
+		background-color: ${props => props['data-n'] === props.activeNote ? colors_1.activeNote : 'none'}
 		border: 1px solid ${colors_1.black35};
 		border-radius: 1em;
 		padding: .3em .6em;

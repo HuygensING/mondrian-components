@@ -12,12 +12,7 @@ exports.Lb = styled_components_1.default(Tag) `
 	font-size: 16px;
 `;
 exports.Pb = styled_components_1.default.div `
-	background: #EEE;
-	border: 1px solid #CCC;
-	height: 50px;
-	position: absolute;
-	right: -75px;
-	width: 50px;
+	position: relative;
 `;
 exports.Del = styled_components_1.default.span `
 	color: red;
@@ -72,3 +67,4 @@ __export(require("./body"));
 __export(require("./note"));
 __export(require("./notes"));
 __export(require("./anchor"));
+__export(require("./facsthumb"));

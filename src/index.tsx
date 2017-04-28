@@ -14,12 +14,7 @@ export const Lb = styled(Tag)`
 
 // Pagebreak
 export const Pb = styled.div`
-	background: #EEE;
-	border: 1px solid #CCC;
-	height: 50px;
-	position: absolute;
-	right: -75px;
-	width: 50px;
+	position: relative;
 `;
 
 export const Del = styled.span`
@@ -86,3 +81,4 @@ export * from './body';
 export * from './note';
 export * from './notes';
 export * from './anchor';
+export * from './facsthumb';

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import {activeNote} from "./colors";
 
 const NoteComp = (props) =>
 	<li
@@ -9,6 +10,7 @@ const NoteComp = (props) =>
 	</li>;
 
 export const Note = styled(NoteComp)`
+	background-color: ${props => props.active ? activeNote : 'none'}
 	margin-bottom: 1em;
 `;
 

@@ -1,13 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = require("react");
-const mark_js_1 = require("mark.js");
+const mark_ts_1 = require("mark.ts");
 const styled_components_1 = require("styled-components");
 class BodyComp extends React.Component {
     componentDidMount() {
         if (this.props.query == null)
             return;
-        const instance = new mark_js_1.default(this.node);
+        const instance = new mark_ts_1.default(this.node);
         instance.mark(this.props.query, {
             acrossElements: true,
             accuracy: 'complementary',

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Mark from 'mark.js';
+import Mark from 'mark.ts';
 import styled from "styled-components";
 
 class BodyComp extends React.Component<any, any> {

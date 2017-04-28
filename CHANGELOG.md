@@ -1,3 +1,8 @@
+### v1.3.0	(2017/4/28 16:47)
+* Add notes and facsimile
+* Center Body in div
+* Add anchor
+
 ### v1.2.3	(2017/4/20 14:6)
 * Add undefined tags
 

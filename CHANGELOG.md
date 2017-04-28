@@ -1,3 +1,6 @@
+### v1.3.1	(2017/4/28 17:10)
+* Rename mark.js to mark.ts
+
 ### v1.3.0	(2017/4/28 16:47)
 * Add notes and facsimile
 * Center Body in div

@@ -2,11 +2,28 @@ import * as React from 'react';
 import styled from 'styled-components';
 import {activeNote, black35, black50} from "./colors";
 
-const AnchorComp = (props) =>
-	<a
-		className={`${props.className} anchor`}
-	  onClick={() => props.activateNote(props['data-n'])}
-	/>;
+class AnchorComp extends React.Component<any, any> {
+	private node;
+
+	private handleClick = () => {
+		const anchorTop = this.node.getBoundingClientRect().top;
+		const textTop = document.getElementById('entry-body').getBoundingClientRect().top;
+		const { activateNote, n } = this.props;
+		activateNote(n, (anchorTop - textTop));
+	};
+
+	render() {
+		const { className } = this.props;
+
+		return (
+			<a
+				className={`${className} anchor`}
+				onClick={this.handleClick}
+			  ref={(node) => { this.node = node; }}
+			/>
+		);
+	}
+}
 
 export const Anchor = styled(AnchorComp)`
 	cursor: pointer;
@@ -15,7 +32,7 @@ export const Anchor = styled(AnchorComp)`
 	
 	&:before {
 		background-color: ${props =>
-			props['data-n'] === props.activeNote ? activeNote : 'none'
+			props['n'] === props.activeNote ? activeNote : 'none'
 		}
 		border: 1px solid ${black35};
 		border-radius: 1em;

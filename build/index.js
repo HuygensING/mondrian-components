@@ -32,8 +32,8 @@ exports.Corr = styled_components_1.default(Tag) `
 	border: 1px solid #AAA;
 `;
 exports.Hi = styled_components_1.default(Tag) `
-	text-decoration: ${props => props['data-rend'] === 'underline' ? 'underline' : 'none'}
-	vertical-align: ${props => props['data-rend'] === 'super' ? 'super' : 'baseline'}
+	text-decoration: ${props => props['rend'] === 'underline' ? 'underline' : 'none'}
+	vertical-align: ${props => props['rend'] === 'super' ? 'super' : 'baseline'}
 `;
 exports.Supplied = styled_components_1.default(Tag) `
 	color: #AAA;

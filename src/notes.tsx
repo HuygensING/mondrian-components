@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import {black50} from "./colors";
 
 const titleByType = {
 	origNotes: 'Notes by Mondriaan',
@@ -12,7 +13,7 @@ const NotesComp = (props) =>
 		{
 			props.children.map((child, i) =>
 				React.cloneElement(child, {
-					active: props.activeNote != null && props.activeNote === child.props['data-n'],
+					active: props.activeNote != null && props.activeNote === child.props['n'],
 					key: i,
 				})
 			)
@@ -20,6 +21,13 @@ const NotesComp = (props) =>
 	</ol>;
 
 export const Notes = styled(NotesComp)`
+	color: ${black50};
+	font-size: 0.85em;
+	list-style: none;
 	margin: 0;
-	padding: 0 0 0 2em;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: ${props => props.noteTop != null ? `${props.noteTop - 10}px`: 0};
+	width: 280px;
 `;

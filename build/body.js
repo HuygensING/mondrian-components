@@ -16,7 +16,7 @@ class BodyComp extends React.Component {
         });
     }
     render() {
-        return (React.createElement("div", { className: this.props.className, ref: (node) => { this.node = node; } }, this.props.children));
+        return (React.createElement("div", { className: this.props.className, id: "entry-body", ref: (node) => { this.node = node; } }, this.props.children));
     }
 }
 exports.Body = styled_components_1.default(BodyComp) `
@@ -24,6 +24,7 @@ exports.Body = styled_components_1.default(BodyComp) `
 	font-size: 24px;
 	line-height: 36px;
 	margin: auto;
-	max-width: 480px;
+	padding-right: 300px;
 	position: relative;
+	width: 480px;
 `;

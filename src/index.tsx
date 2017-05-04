@@ -42,8 +42,8 @@ export const Corr = styled(Tag)`
 
 // Highlighted (to add styling)
 export const Hi = styled(Tag)`
-	text-decoration: ${props => props['data-rend'] === 'underline' ? 'underline' : 'none'}
-	vertical-align: ${props => props['data-rend'] === 'super' ? 'super' : 'baseline'}
+	text-decoration: ${props => props['rend'] === 'underline' ? 'underline' : 'none'}
+	vertical-align: ${props => props['rend'] === 'super' ? 'super' : 'baseline'}
 `;
 
 export const Supplied = styled(Tag)`

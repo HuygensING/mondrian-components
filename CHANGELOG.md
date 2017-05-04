@@ -1,3 +1,6 @@
+### v1.4.0	(2017/5/4 15:43)
+* Move notes next to text
+
 ### v1.3.1	(2017/4/28 17:10)
 * Rename mark.js to mark.ts
 

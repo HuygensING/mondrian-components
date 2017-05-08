@@ -1,3 +1,6 @@
+### v1.4.1	(2017/5/8 12:43)
+* Update Storybook with notes
+
 ### v1.4.0	(2017/5/4 15:43)
 * Move notes next to text
 

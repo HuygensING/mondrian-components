@@ -1,4 +1,4 @@
-.idea
-mondrian-components.iml
-node_modules
-static
+/.idea
+/mondrian-components.iml
+/node_modules
+/static

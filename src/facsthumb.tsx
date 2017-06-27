@@ -5,7 +5,7 @@ const FacsThumbComp = (props) =>
 	<img
 		className={props.className}
 		onClick={() => props.activateFacsimile(props.url)}
-	  src={`/static/facsimiles/thumbnails/${props.url}.jpg`}
+	  src={`/static2/facsimile_thumbs/${props.url}.jpg`}
 	/>;
 
 export const FacsThumb = styled(FacsThumbComp)`

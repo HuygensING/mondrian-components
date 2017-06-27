@@ -32,12 +32,14 @@ export const Anchor = styled(AnchorComp)`
 	
 	&:before {
 		background-color: ${props =>
-			props['n'] === props.activeNote ? activeNote : 'none'
+			props['n'] === props.activeNote ? black35 : 'none'
 		}
 		border: 1px solid ${black35};
 		border-radius: 1em;
 		padding: .3em .6em;
-		color: ${black50};
+		color: ${props =>
+			props['n'] === props.activeNote ? 'white' : black50
+		}
 		content: counter(noteNumbers);
 		counter-increment: noteNumbers;
 	}

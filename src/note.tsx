@@ -4,9 +4,7 @@ import {activeNote} from "./colors";
 
 const NoteComp = (props) =>
 	props.active ?
-		<li
-			className={props.className}
-		>
+		<li className={props.className}>
 			{props.children}
 		</li> :
 		null;

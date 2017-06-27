@@ -24,11 +24,11 @@ exports.Anchor = styled_components_1.default(AnchorComp) `
 	margin: 0 0.5em;
 	
 	&:before {
-		background-color: ${props => props['n'] === props.activeNote ? colors_1.activeNote : 'none'}
+		background-color: ${props => props['n'] === props.activeNote ? colors_1.black35 : 'none'}
 		border: 1px solid ${colors_1.black35};
 		border-radius: 1em;
 		padding: .3em .6em;
-		color: ${colors_1.black50};
+		color: ${props => props['n'] === props.activeNote ? 'white' : colors_1.black50}
 		content: counter(noteNumbers);
 		counter-increment: noteNumbers;
 	}

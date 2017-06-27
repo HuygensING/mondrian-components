@@ -1,3 +1,8 @@
+### v1.4.2	(2017/6/27 23:6)
+* Change facs thumb url to static2 (docker named volume)
+* Remove red highlight from anchor
+* Add static dir to docs
+
 ### v1.4.1	(2017/5/8 12:43)
 * Update Storybook with notes
 

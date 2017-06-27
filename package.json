@@ -1,6 +1,6 @@
 {
   "name": "mondrian-components",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "## Development - $ npm install - $ npm run watch - Open new terminal. - $ npm run server - The default browser is pointed to http://localhost:3000.",
   "main": "build/index.js",
   "scripts": {
